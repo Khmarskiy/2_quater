@@ -52,7 +52,12 @@ body{
 .contacts{
 
 }
-
+.address{
+    width: 350px;
+}
+.feedbackForm{
+    width: 350px;
+}
 /* общие стили для параграфа и заголовка 1 и 4 */
 .text, .heading1, .heading4 {
     color: #1F3F68;
