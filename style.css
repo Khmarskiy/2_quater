@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 /* центрирование всех данных на сайте, ограничение максимального расшинения до 1440 px*/
 .container {
@@ -19,7 +19,7 @@ body{
 }
 /* стиль раздела меню */
 .menu{
-   display: flex;                      /* превращает меню в горизонтальное*/
+   display: flex;                        /* превращает меню в горизонтальное*/
    justify-content: space-between;      /* раскидывает ссылки меню в разные стороны */
    align-items: center;                 /* центрирует меню по вертикальной оси */
    flex-wrap: wrap;                     /* обеспечивает перенос меню при маленьких разрешениях, хотя пока не работает... */
@@ -28,8 +28,7 @@ body{
    padding-right: 20px;
    border: 1px solid olive;
    background-color:rgb(231, 231, 162);
-
-   list-style-type:none; /* убрать маркеры в списке */
+   list-style-type:none;                /* убрать маркеры в списке */
   
 }
 /* стиль элемента меню */
@@ -40,7 +39,7 @@ body{
     border-width: 2px 0px;
 
 }
-/* сделать первый элемент меню со скруглденными границами слева */
+/* сделать первый элемент меню со скругленными границами слева */
 .menu_item:first-child{
 border-bottom-left-radius: 10px;
 border-top-left-radius: 10px;
@@ -67,18 +66,13 @@ border-right: none;
 content: '  Новое!';
 color: chocolate;
 }
+/* баловство, делает стрелки при наведении курсора на меню */
 .menu_link:hover:after{
     content: ' <--';
     }
 .menu_link:hover:before{
        content: '-->';
      }
-.menu_main{
- 
-}
-.menu_contacts{
-
- }
 
 /* стиль раздела первой/главной страницы */
 .mainscr{
@@ -154,6 +148,18 @@ list-style-type:none;               /* убрать маркеры в списк
 .allrightsreserved{
 
 }
+.contactsAndFeedbackForm{
+    display: flex;
+    justify-content: space-around;      /* раскидывает ссылки меню в разные стороны */
+    align-items: center;                 /* центрирует меню по вертикальной оси */
+    flex-wrap: wrap;
+    border: 3px solid red;
+}
+.feedbackForm{
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+border-radius: 10px;
+}
+
 .address{
     width: 350px;
 }
