@@ -1,7 +1,14 @@
+/* обнуление всех отступов */
 *{
     margin: 0;
     padding: 0;
 }
+/* центрирование всех данных на сайте, ограничение максимального расшинения до 1440 px*/
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    }
+
 body{
     font-family:sans-serif;
 }
@@ -9,10 +16,53 @@ body{
 .img{
     width: 350px;
 }
-/* стиль разделаменю */
+/* стиль раздела меню */
 .menu{
-
+   
+    list-style-type:none; /* убрать маркеры в списке */
+    border: 1px solid  #356EAD;
+  
 }
+/* стиль элемента меню */
+.menu_item{
+    border: 1px solid red;
+
+    text-align: left;
+    border-style: dashed;
+}
+/* сделать первый элемент меню со скруглденными границами слева */
+.menu_item:first-child{
+border-bottom-left-radius: 10px;
+border-top-left-radius: 10px;
+border-right: none;
+}
+.menu_item:last-child{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: none;
+    }
+/* при наведении на элемент меню поменять цвет ссылки меню и цвет фона*/
+.menu_link:hover{
+    color:#B57C12;
+    background-color: #1F3F68;
+}
+/* стиль ссылки в меню */
+.menu_link{
+
+    border: 1px;
+    border: 1px solid rgb(29, 41, 201);
+}
+/* добавление шильдика справа для новых позиций в меню */
+.menu_link_new:after{
+content: '  Новое!';
+color: chocolate;
+}
+.menu_link:hover:after{
+    content: ' <--';
+    }
+.menu_link:hover:before{
+       content: '-->';
+     }
 /* стиль раздела первой/главной страницы */
 .mainscr{
 
