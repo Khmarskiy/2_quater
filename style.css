@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    max-width: 1200px;
 }
 /* центрирование всех данных на сайте, ограничение максимального расшинения до 1440 px*/
 .container {
@@ -18,17 +19,26 @@ body{
 }
 /* стиль раздела меню */
 .menu{
-   
-    list-style-type:none; /* убрать маркеры в списке */
-    border: 1px solid  #356EAD;
+   display: flex;                      /* превращает меню в горизонтальное*/
+   justify-content: space-between;      /* раскидывает ссылки меню в разные стороны */
+   align-items: center;                 /* центрирует меню по вертикальной оси */
+   flex-wrap: wrap;                     /* обеспечивает перенос меню при маленьких разрешениях, хотя пока не работает... */
+   height: 30px;
+   padding-left: 30px;
+   padding-right: 20px;
+   border: 1px solid olive;
+   background-color:rgb(231, 231, 162);
+
+   list-style-type:none; /* убрать маркеры в списке */
   
 }
 /* стиль элемента меню */
 .menu_item{
-    border: 1px solid red;
-
-    text-align: left;
+    border-color: red;
+   
     border-style: dashed;
+    border-width: 2px 0px;
+
 }
 /* сделать первый элемент меню со скруглденными границами слева */
 .menu_item:first-child{
@@ -49,8 +59,8 @@ border-right: none;
 /* стиль ссылки в меню */
 .menu_link{
 
-    border: 1px;
-    border: 1px solid rgb(29, 41, 201);
+    text-decoration-line: none;
+    padding: 3px;
 }
 /* добавление шильдика справа для новых позиций в меню */
 .menu_link_new:after{
@@ -63,50 +73,91 @@ color: chocolate;
 .menu_link:hover:before{
        content: '-->';
      }
+.menu_main{
+ 
+}
+.menu_contacts{
+
+ }
+
 /* стиль раздела первой/главной страницы */
 .mainscr{
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 
 }
-/* стиль раздела заголовка */
+/* стиль раздела заголовка h1*/
 .header1scr{
-
+    width: 510px;
 }
-/* стиль заголовка второй страницы */
-.header2scr{
-
+/* стиль текста после заголовка h1 */
+.header_paragraph{
+width: 425px;
+}
+/* стиль заголовка второго экрана */
+.what-we-do{
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    border: 4px solid #7E37F1;
 }
 /* раздел общего блока преимуществ */
-.featureblocktotal{
-
+.featureblock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 3px solid #058228;
 }
 /* крайний левый блок преимуществ */
-.leftblock{
-
+.feature{
+    width: 359px;
+    border: 3px solid #D019BE;;
 }
+.finished_project{
+    border: 3px solid #CD072B;
+}
+.up_link:hover:after{
+content: '^'
+}
+
 /* блок подвала */
 .footer{
+    background: #316099;
+    border: 3px solid #DD2121
     }
 /* блок обратной связи */
-.feedback{ 
-
+.footerTop{
+    display: flex;
+    border: 5px solid #F5F8D4;
 }
-/* блок заголовка обратной связи */
-.feedbackHeading{
-
+.footerTopText{
+    border: 3px solid #F9B8FF;
+    width: 495px;
 }
-/* блок текста обратной связи */
-.feedbackText{
-
+.footerTopTextHeading{
+    width: 340;
 }
 /* Блок контактов */
-.contacts{
+.footerBottom{
+    border: 4px solid #CAFFBD;
+    padding: 3px;
+}
+.footerBottomContacts{
+display: flex;
+justify-content: space-between;      /* раскидывает ссылки меню в разные стороны */
+align-items: center;                 /* центрирует меню по вертикальной оси */
+flex-wrap: wrap;
+list-style-type:none;               /* убрать маркеры в списке */
+
+}
+.foterBottomLink{
+    text-decoration-line: none;
+    color: #fff;
+}
+.allrightsreserved{
 
 }
 .address{
     width: 350px;
 }
 .feedbackForm{
-    
 }
 /* общие стили для параграфа и заголовка 1 и 4 */
 .text, .heading1, .heading4 {
@@ -114,7 +165,6 @@ color: chocolate;
 }
 /* Стиль для параграфа */
 .text{
-   
     font-size: 16px;
     line-height: 26px;
 }
@@ -122,6 +172,7 @@ color: chocolate;
 .heading1
 {
     font-size: 64px;
+
 }
 /* общие стили для заголовка 2 и 3 */
 .heading2, .heading3{
