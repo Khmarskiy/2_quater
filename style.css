@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* max-width: 1200px; */
+    
 }
 /* центрирование всех данных на сайте, ограничение максимального расшинения до 1440 px*/
 .container {
@@ -18,8 +18,8 @@ body{
     width: 350px;
 }
 .mainscr{
+    height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
-
 }
 /* стиль раздела меню */
 .menu{
