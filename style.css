@@ -17,6 +17,10 @@ body{
 .img{
     width: 350px;
 }
+.mainscr{
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+
+}
 /* стиль раздела меню */
 .menu{
    display: flex;                        /* превращает меню в горизонтальное*/
@@ -31,60 +35,34 @@ body{
    list-style-type:none;                /* убрать маркеры в списке */
   
 }
-/* стиль элемента меню */
-.menu_item{
-    border-color: red;
-   
-    border-style: dashed;
-    border-width: 2px 0px;
-
-}
-/* сделать первый элемент меню со скругленными границами слева */
-.menu_item:first-child{
-border-bottom-left-radius: 10px;
-border-top-left-radius: 10px;
-border-right: none;
-}
-.menu_item:last-child{
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    border-left: none;
-    }
-/* при наведении на элемент меню поменять цвет ссылки меню и цвет фона*/
-.menu_link:hover{
-    color:#B57C12;
-    background-color: #1F3F68;
-}
 /* стиль ссылки в меню */
 .menu_link{
 
     text-decoration-line: none;
     padding: 3px;
 }
-/* добавление шильдика справа для новых позиций в меню */
+/* добавление шильдика справа для новых позиций в меню
 .menu_link_new:after{
 content: '  Новое!';
 color: chocolate;
 }
 /* баловство, делает стрелки при наведении курсора на меню */
-.menu_link:hover:after{
+/* .menu_link:hover:after{
     content: ' <--';
     }
 .menu_link:hover:before{
-       content: '-->';
-     }
+       content: '-->'; 
+     } */
 
-/* стиль раздела первой/главной страницы */
-.mainscr{
-    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+
+.mainscr_info{
 
 }
-/* стиль раздела заголовка h1*/
-.header1scr{
+.mainscr_header{
     width: 510px;
+    color: #1F3F68;
 }
-/* стиль текста после заголовка h1 */
-.header_paragraph{
+.mainscr_text{
 width: 425px;
 }
 /* стиль заголовка второго экрана */
@@ -102,19 +80,25 @@ width: 425px;
 /* крайний левый блок преимуществ */
 .feature{
     width: 359px;
-    border: 3px solid #D019BE;;
+    border: 3px solid #D019BE;
 }
+.feature_heading{
+
+}
+
 .finished_project{
     border: 3px solid #CD072B;
 }
 .up_link:hover:after{
 content: '^'
 }
+.finished_project_heading{
 
+}
 /* блок подвала */
 .footer{
     background: #316099;
-    border: 3px solid #DD2121
+ 
     }
 /* блок обратной связи */
 .footerTop{
@@ -166,7 +150,7 @@ border-radius: 10px;
 .feedbackForm{
 }
 /* общие стили для параграфа и заголовка 1 и 4 */
-.text, .heading1, .heading4 {
+p, h4 {
     color: #1F3F68;
 }
 /* Стиль для параграфа */
@@ -181,7 +165,7 @@ border-radius: 10px;
 
 }
 /* общие стили для заголовка 2 и 3 */
-.heading2, .heading3{
+.heading2, {
     text-align: center;
 }
 /* Стиль для заголовка h2 */
@@ -191,10 +175,7 @@ border-radius: 10px;
     font-size: 44px;
 }
 /* Стиль для заголовка h3 */
-.heading3
-{
-    font-size: 36px;
-}
+
 /* Стиль для заголовка h4 */
 .heading4
 {
