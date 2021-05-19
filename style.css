@@ -21,19 +21,23 @@ body{
     height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
+.top_box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url(img/mainscr_bg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
 /* стиль раздела меню */
 .menu{
    display: flex;                        /* превращает меню в горизонтальное*/
    justify-content: space-between;      /* раскидывает ссылки меню в разные стороны */
    align-items: center;                 /* центрирует меню по вертикальной оси */
    flex-wrap: wrap;                     /* обеспечивает перенос меню при маленьких разрешениях, хотя пока не работает... */
-   height: 30px;
-   padding-left: 30px;
-   padding-right: 20px;
-   border: 1px solid olive;
-   background-color:rgb(231, 231, 162);
+   padding-top: 42px;
    list-style-type:none;                /* убрать маркеры в списке */
-  
 }
 /* стиль ссылки в меню */
 .menu_link{
@@ -56,14 +60,38 @@ color: chocolate;
 
 
 .mainscr_info{
-
+padding-top:115px;
+flex-grow: 1;
+border: olivedrab solid;
 }
 .mainscr_header{
     width: 510px;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
     color: #1F3F68;
+    margin-bottom: 32px;
+    border: olivedrab solid;
+    
 }
 .mainscr_text{
+    border: olivedrab solid;
 width: 425px;
+}
+.top_button{
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+background: #5A98D0;
+box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+border-radius: 10px;
+padding: 15px 50px;
+text-decoration: none;
+display: inline-block;
+margin-top: 71px;
 }
 /* стиль заголовка второго экрана */
 .what-we-do{
@@ -150,13 +178,14 @@ border-radius: 10px;
 .feedbackForm{
 }
 /* общие стили для параграфа и заголовка 1 и 4 */
-p, h4 {
-    color: #1F3F68;
-}
+
 /* Стиль для параграфа */
 .text{
     font-size: 16px;
     line-height: 26px;
+    color: #1F3F68;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
 }
 /* Стиль для заголовка h1 */
 .heading1
@@ -174,7 +203,6 @@ p, h4 {
     font-weight: 500;
     font-size: 44px;
 }
-/* Стиль для заголовка h3 */
 
 /* Стиль для заголовка h4 */
 .heading4
