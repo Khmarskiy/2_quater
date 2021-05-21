@@ -160,7 +160,7 @@ color: #5A98D0;
 
 .finished_project{
  
-    padding-bottom: 112px;
+
 }
 .up_link:hover:after{
 content: '^'
@@ -170,6 +170,8 @@ content: '^'
     text-align: center;
     letter-spacing: 0.05em;
     color: #000000;
+    font-size: 36px;
+    line-height: 46px;
 }
 .footerHeading3{
     width: 340;
@@ -222,6 +224,7 @@ margin-right: 32px;
 /* блок подвала */
 .footer{
     background: #316099;
+    margin-top: 112px;
     }
 /* блок обратной связи */
 .footerTop{
@@ -293,6 +296,7 @@ list-style-type:none;               /* убрать маркеры в списк
     justify-content: space-around;      /* раскидывает ссылки меню в разные стороны */
     align-items: center;                 /* центрирует меню по вертикальной оси */
     flex-wrap: wrap;
+    padding: 57px 0 96px 0;
     
 }
 .feedbackForm{
