@@ -11,9 +11,8 @@
 <!-- тело страницы -->
 
 <body>
-    <div class="container">
         <!-- Меню -->
-        <ul class="menu">
+        <ul class="menu container">
             <li>
                 <a class=" menu_link" id="top" href="index.html"><img src="img/Navigation.svg" alt="menu"> </a>
             </li>
@@ -29,45 +28,49 @@
             <p class="text text_Contact">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, fugit.
             </p>
         </div>
-        <div class="contactsAndFeedbackForm">
-            <div class="visitcard">
-                <div class="address">
-                    <img class="img" src="img/contact_logo.png" alt="contacts">
-                    <h4 class="heading4">Address</h4>
-                    <p class="text"> Lorem ipsum dolor sit amet consectetur adipisicing. </p>
-                    <h4 class="heading4">Phone</h4>
-                    <ul>
-                        <li><a href="tel:+75555555555">+7 555 555 55 55</a></li>
-                        <li><a href="tel:+76666666666">+7 666 666 66 66</a></li>
-                    </ul>
-                    <h4 class="heading4">Online service</h4>
-                    <ul>
-                        <li><a href="tel:+75555555555">+7 555 555 55 55</a></li>
-                        <li><a href="mailto:mail@mail.ru">mail@mail.ru</a></li>
-                    </ul>
-                </div>
+<!-- контакты и форма обратной связи  -->
+<div class="contactsAndFeedbackForm container">
+    <div class="leftblock">
+        <div class="address">
+            <img class="img" src="img/contact_logo.png" alt="contacts">
+            <h4 class="address__heading4">Address</h4>
+            <p class="address__text "> Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <h4 class="address__heading4">Phone</h4>
+            <ul a class="address__list">
+                <li><a class=" address__text address__text_opasity" href="tel:+75555555555">+7-812-7313-4321</a>
+                </li>
+                <li><a class="address__text address__text_opasity" href="tel:+76666666666">+7-817-0000-1234</a>
+                </li>
+            </ul>
+            <h4 class="address__heading4">Online service</h4>
+            <ul a class="address__list">
+                <li><a class="address__text address__text_web" href="www.site.com">www.site.com</a>
+                </li>
+                <li><a class="address__text address__text_web" href="mailto:hello.site@gmail.com">hello.site@gmail.com</a>
+                </li>
+            </ul>
+            </div>
             </div>
             <!-- Форма обратной связи -->
-            <div class="feedbackForm">
-                <h4 class="heading4">Send us message</h4>
+        <div class="feedbackForm">
+                <h4 class="address__heading4">Send us message</h4>
                 <form class="formfilling" action="#">
-                    Full Name <input class="textinput" type="name" placeholder="Иванов Иван Иванович"> <br>
-                    Email <input class="textinput" type="email" placeholder="mail@mail.ru"> <br>
-                    Message <textarea class="textinput" cols="30" rows="10"></textarea><br>
-                    <button class="btn" type="submit">Submit</button>
-                </form>
-            </div>
-
-        </div>
+                    Full Name <input class="textinput" type="name" placeholder="Your Name"> <br>
+                    Email <input class="textinput" type="email" placeholder="Your Email"> <br>
+                    Message <textarea class="textinput" cols="30" rows="10" placeholder="Your Message"></textarea><br>
+                    <button class="btn formfilling__btn" type="submit">Submit</button>
+                    </form>
+                    </div>
+    </div>
         <!-- карта -->
 
 
-        <div class="map">
+        <div class="map container">
             <script type="text/javascript" charset="utf-8" async
                 src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3ALIDCju3Ll2PywiMb_w_Lb34bE2Sj82aG&amp;width=100%&amp;height=398&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
-    </div>
-    <!-- подвал страницы -->
+        <!-- подвал страницы -->
     <div class="footer ">
         <div class="container">
             <div class="footerTop ">

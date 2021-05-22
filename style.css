@@ -131,6 +131,7 @@ margin-top: 71px;
     border-radius: 10px;
     padding: 44px 32px;
     box-sizing: border-box;
+    margin: 32px auto;
 }
 /* изображение в карточке */
 .feature__image{
@@ -289,29 +290,51 @@ list-style-type:none;               /* убрать маркеры в списк
 }
 .contactsUs{
     background-image: url(img/contactUs_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 50px 0;
 }
 .contactsAndFeedbackForm{
     display: flex;
-    justify-content: space-around;      /* раскидывает ссылки меню в разные стороны */
-    align-items: center;                 /* центрирует меню по вертикальной оси */
+    /* justify-content: space-around; */
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 57px 0 96px 0;
-    
+    /* flex-grow: 1; */
+    }
+.leftblock{
+    flex-grow: 1;
 }
 .feedbackForm{
     box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
-border-radius: 10px;
+    border-radius: 10px;
+    padding: 0 56px 56px;
+    margin: auto;
+    /* flex-grow: 1; */
 }
 
 .address{
-    width: 350px;
+    width:350px;
+    margin: auto;
+    /* flex-grow: 1; */
+    padding: 0 56px 56px;
 }
-.feedbackForm{
-}
+
 .formfilling{
     display: flex;
     flex-direction: column;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+       color: #1F3F68;
+    opacity: 0.8;
+    
+}
+placeholder{ 
+    color: red;
+}
+.formfilling__btn{
+padding: 23px 183px;
 }
 
 .fp__text{
@@ -341,10 +364,39 @@ border-radius: 10px;
 }
 
 /* Стиль для заголовка h4 */
-.heading4
+.address__heading4
 {
+    font-weight: 500;
     font-size: 20px;
     line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    text-transform: uppercase;/* капслок */
+    margin-top: 56px;
+}
+.address__text{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.6;
+    text-decoration: none;
+    list-style-type: none;
+   
+}
+.address__text_opasity{
+/* opacity: 1; */
+opacity: 0,6; /* возможно ошибка в стилях на макете */
+}
+.address__text_web{
+font-weight: normal;
+/* opacity: 1; */
+opacity: 0,6; /* возможно ошибка в стилях на макете */
+letter-spacing: 0.05em;
+}
+.address__list{
+    list-style-type: none;
 }
 /* Стиль для ввода данных в формах */
 .textinput{
@@ -352,6 +404,18 @@ border-radius: 10px;
     box-sizing: border-box;
     border-radius: 10px;
     opacity: 0.4;
+    padding: 21px 42px;
+    margin-top: 8px;
+}
+.textinput:focus{
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    /* font-size: 16px; */
+    /* line-height: 30px; */
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 1;
+
 }
 /* стиль кнопки */
 .btn{
