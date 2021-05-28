@@ -8,6 +8,7 @@
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    border: red solid
     }
 
 body{
@@ -26,14 +27,16 @@ flex-grow: 1;
     width: 350px;
 }
 .mainscr{
-    max-height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 .top_box{
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 0 114px;
+    padding: 34px 114px 0;
+    
+
 }
 .text{
     font-size: 16px;
@@ -56,8 +59,6 @@ flex-grow: 1;
    display: flex;                        /* превращает меню в горизонтальное*/
    justify-content: space-between;      /* раскидывает ссылки меню в разные стороны */
    align-items: center;                 /* центрирует меню по вертикальной оси */
-   flex-wrap: wrap;                     /* обеспечивает перенос меню при маленьких разрешениях, хотя пока не работает... */
-   padding-top: 42px;
    list-style-type:none;                /* убрать маркеры в списке */
     /* position: sticky; */
 }
@@ -82,13 +83,11 @@ color: chocolate;
 
 
 .mainscr_info{
-padding: 115px 0 190px 0;
-/* padding-top:115px; */
-flex-grow: 1;
-background-image: url(img/mainscr_bg.png);
-background-repeat: no-repeat;
-background-position: right center;
-background-size: 42%;
+    background-image: url(img/mainscr_bg.png);
+    background-repeat: no-repeat;
+    background-position: right 107px;
+    background-size: 55%;
+    padding-bottom: 190px;
 
 }
 .mainscr_header{
@@ -98,7 +97,7 @@ background-size: 42%;
     line-height: 74px;
     letter-spacing: 0.04em;
     color: #1F3F68;
-    margin-bottom: 32px;
+    margin: 107px 0 32px;
 }
 .mainscr_text{
 max-width: 425px;
@@ -119,35 +118,32 @@ margin-top: 71px;
 }
 /* стиль заголовка второго экрана */
 .what-we-do{
-    padding-top: 64px;
+    padding: 64px 0;
   
 }
 
 /* блок карточек */
 .featureblock{
-    padding: 64px 0;
+    
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  
+    justify-content: space-between;
 }
 
 /* карточка */
 .feature{
     display: flex;
     flex-direction: column;
-    width: 359px;
+    max-width: 359px;
     background: #FFFFFF;
     box-shadow: 5px 20px 50px rgb(16 112 177 / 20%);
     border-radius: 10px;
     padding: 44px 32px;
     box-sizing: border-box;
-    margin: 32px auto;
+    
 }
 /* изображение в карточке */
 .feature__image{
     align-self: center;
-    margin-bottom: 51px;
 }
 /* Заголовок карточки */
 .feature__heading{
@@ -156,6 +152,7 @@ margin-top: 71px;
     line-height: 30px;
     letter-spacing: 0.05em;
     color: #1F3F68;
+    margin: 50px 0 14px;
 }
 feature__btn{
     display: flex;
@@ -167,13 +164,10 @@ font-size: 14px;
 line-height: 30px;
 letter-spacing: 0.05em;
 color: #5A98D0;
+margin-top: 29px;
 }
 
 
-.finished_project{
- 
-
-}
 .up_link:hover:after{
 content: '^'
 }
@@ -184,6 +178,7 @@ content: '^'
     color: #000000;
     font-size: 36px;
     line-height: 46px;
+    padding-bottom: 64px;
 }
 .footerHeading3{
     width: 340;
@@ -191,6 +186,9 @@ content: '^'
     line-height: 46px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+}
+.finished_project{
+    padding: 64px 0;
 }
 
 .project__big{
@@ -452,10 +450,27 @@ letter-spacing: 0.05em;
     .container{
         padding-left: 32px;
         padding-right: 32px;
+        border: yellow solid
     }
     .mainscr_info {
-    background-position: right 385px;
+    background-position: right 292px;
         }
+    .featureblock {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+.what-we-do {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+    .feature {
+    
+    margin-top: 32px;
+    }
+        /* justify-content: space-between; */
     .top_box{
             padding: 0 32px;
     }
@@ -474,6 +489,7 @@ letter-spacing: 0.05em;
     .container{
         padding-left: 16px;
         padding-right: 16px;
+      border: green solid;
     }
     .mainscr_header {
         font-weight: 300;
